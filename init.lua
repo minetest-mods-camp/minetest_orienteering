@@ -282,6 +282,7 @@ function orienteering.init_hud(player)
 			alignment = orienteering.settings.hud_alignment,
 			number = 0xFFFFFF,
 			scale= { x = 100, y = 20 },
+			z_index = 0,
 		})
 	end
 end
