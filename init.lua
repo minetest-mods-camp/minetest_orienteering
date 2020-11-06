@@ -243,7 +243,7 @@ if minetest.get_modpath("default") ~= nil then
 end
 
 function orienteering.update_automapper(player)
-	if orienteering.tool_active(player, "orienteering:automapper") or orienteering.tool_active(player, "orienteering:quadcorder") or minetest.settings:get_bool("creative_mode") then
+	if orienteering.tool_active(player, "orienteering:automapper") or orienteering.tool_active(player, "orienteering:quadcorder") or minetest.is_creative_enabled(player:get_player_name()) then
 		player:hud_set_flags({minimap = true, minimap_radar = true})
 	elseif ((not mod_map) and orienteering.tool_active(player, "orienteering:map")) or ((mod_map) and orienteering.tool_active(player, "map:mapping_kit")) then
 		player:hud_set_flags({minimap = true, minimap_radar = false})
