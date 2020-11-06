@@ -68,7 +68,6 @@ minetest.register_tool("orienteering:triangulator", {
 })
 
 -- Displays player yaw
--- TODO: calculate yaw difference between 2 points
 minetest.register_tool("orienteering:compass", {
 	description = S("Compass"),
 	_tt_help = S("Shows your yaw"),
@@ -80,7 +79,6 @@ minetest.register_tool("orienteering:compass", {
 })
 
 -- Displays player pitch
--- TODO: calculate pitch difference between 2 points
 minetest.register_tool("orienteering:sextant", {
 	description = S("Sextant"),
 	_tt_help = S("Shows your pitch"),
